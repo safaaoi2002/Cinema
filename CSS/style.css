@@ -1,0 +1,131 @@
+/* hero section   in home page****************************************************************************************** */
+.hero-section {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../public/hero.webp");
+    background-size: cover;
+    background-position: center;
+}
+.hero-welcome{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    margin-left: 10%;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: fangsong;
+}
+@media (max-width: 375px) {
+   /*screen is less than 500 px*/
+   .hero-welcome{
+     margin-left: 0%;
+   } 
+}
+/* animation and transformation *********************************************************************************** */
+.glow {
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  from {
+   box-shadow: 0 0 25px rgb(221, 108, 28) ;
+  }
+  to {
+       box-shadow: 0 0 50px rgb(156, 155, 151) ;
+
+  }
+}
+
+.transform {
+  transition:0.4s ease ;
+}
+
+.t-scale:hover{
+  transform: scale(1.1);
+}
+
+/* section 2 in home page  ----cards ********************************************************************************* */
+.card img{
+    height: 300px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 767px) {
+  .card{
+    width: 250px;
+  }
+.card img{
+    height: 350px;
+    object-fit: cover;
+} 
+}
+/* footer  **************************************************************************************************************/
+.fa {
+  padding: 15px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 25px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.footer-img{
+    width: 400px;
+}
+@media (max-width: 500px) {
+   /*screen is less than 500 px*/
+   .footer-img{
+     width: 150px;
+   } 
+}
+.footer1-links{
+ display: flex;
+ gap: 5px;
+ flex-wrap: wrap;
+ flex-direction: column;
+ /* text-align: center; */
+ 
+}
+.footer1-links a{
+ text-decoration: none;
+ color: rgba(255, 255, 255, 0.767);
+}
+.footer-2{
+padding: 70px;
+
+}
+.footer-2 input{
+    padding: auto;
+    border-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    color:rgb(104, 0, 0);
+
+}
+.footer-2 button{
+    padding: auto;
+    background-color: rgb(104, 0, 0);
+    border-color: rgb(255, 255, 255);
+    color: rgb(253, 253, 253);
+    border-radius: 4px;
+}
