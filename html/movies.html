@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Star Cinema</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg fixed-top shadow-lg"
+        style="background-color: rgb(0, 0, 0)"
+      >
+        <div class="container-fluid">
+          <!-- <h1 class="navbar-brand text-light">𝓢𝓲</h1> -->
+          <img src="../public/logo.PNG" style="width: 80px" alt="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../html/home.html"
+                style="color: rgb(255, 223, 118)"
+                >Home</a
+              >
+              <a
+                class="nav-link"
+                href="movies.html"
+                style="color: rgb(255, 223, 118)"
+                >Movies</a
+              >
+              <a
+                class="nav-link"
+                href="book.html"
+                style="color: rgb(255, 223, 118)"
+                >Book</a
+              >
+              <a
+                class="nav-link"
+                href="about.html"
+                style="color: rgb(255, 223, 118)"
+                >About</a
+              >
+              <a
+                class="nav-link"
+                href="login.html"
+                style="color: rgb(255, 223, 118)"
+                >Login</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="mt-5 p-5"
+        style="
+          font-family:
+            &quot;Gill Sans&quot;, &quot;Gill Sans MT&quot;, Calibri,
+            &quot;Trebuchet MS&quot;, sans-serif;
+        "
+      >
+<!-- search input ****************************** -->
+      <div class="d-flex justify-content-between">
+        <h1 class="text-danger fs-4 m-3">
+          NOW <span class="text-black fs-1">SELLING</span>
+        </h1>
+        <input placeholder="search..." id="search" class="search-input" />
+      </div>
+
+      <!-- movies container ********************************************************* -->
+        <div class="container d-flex flex-column rounded-3 shadow">
+        <!-- first Movie card  -->
+          <div class="card movie-card t-scale2 mb-3 border-warning shadow-lg m-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Public/divergent.jpg"
+                  class="img-fluid rounded-start movie-img"
+          
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title text-danger">Divergent</h4>
+                  <p class="card-text">
+                    In a dystopian future, Tris Prior discovers she is
+                    Divergent, a dangerous secret in a society divided by rigid
+                    factions, and must navigate brutal initiation and a deadly
+                    conspiracy to survive.
+                  </p>
+                  <div>
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/book.html">Book</a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#detailsModal"
+                        >
+                          Details
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="https://youtu.be/Aw7Eln_xuWc?si=7hgvKI4VWftqvdwk&t=6"
+                          >trailer</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--second movie card -->
+          <div class="card movie-card t-scale2 mb-3 border-warning shadow-lg m-3">
+            <!-- style="max-width: 540px;" -->
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Public/Batman.jfif"
+                  class="img-fluid rounded-start movie-img"
+                  
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title text-danger">The Batman</h4>
+                  <p class="card-text">
+                    In Gotham City, Batman investigates a series of murders by
+                    the Riddler, uncovering corruption tied to his own family
+                    while confronting his identity as the city’s vigilante.
+                  </p>
+                  <div>
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/book.html">Book</a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#detailsModal"
+                        >
+                          Details
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="https://youtu.be/Aw7Eln_xuWc?si=7hgvKI4VWftqvdwk&t=6"
+                          >trailer</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--third movie card -->
+          <div class="card movie-card t-scale2 mb-3 border-warning shadow-lg m-3">
+            
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Public/Cinderella.webp"
+                  class="img-fluid rounded-start movie-img"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title text-danger">Cinderella</h4>
+                  <p class="card-text">
+                    Cinderella is a classic animated film that tells the story
+                    of a kind young woman mistreated by her stepfamily, who
+                    ultimately finds love and happiness with the help of her
+                    fairy godmother.
+                  </p>
+                  <div>
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/book.html">Book</a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#detailsModal"
+                        >
+                          Details
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="https://youtu.be/Aw7Eln_xuWc?si=7hgvKI4VWftqvdwk&t=6"
+                          >trailer</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--4th movie card -->
+          <div class="card movie-card t-scale2 mb-3 border-warning shadow-lg m-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Public/Mission.jpg"
+                  class="img-fluid rounded-start movie-img"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title text-danger">
+                    Mission: Impossible – The Final Reckoning
+                  </h4>
+                  <p class="card-text">
+                    In "Mission: Impossible – The Final Reckoning," Ethan Hunt
+                    and his team face a rogue AI known as the Entity, which
+                    threatens global destruction, while battling the antagonist
+                    Gabriel who seeks to control it.
+                  </p>
+                  <div>
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/book.html">Book</a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#detailsModal"
+                        >
+                          Details
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="https://youtu.be/Aw7Eln_xuWc?si=7hgvKI4VWftqvdwk&t=6"
+                          >trailer</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--5th movie card -->
+          <div class="card movie-card t-scale2 mb-3 border-warning shadow-lg m-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Public/avatar2.webp"
+                  class="img-fluid rounded-start movie-img"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title text-danger">Avatar</h4>
+                  <p class="card-text">
+                    "Avatar" follows paraplegic Marine Jake Sully as he
+                    navigates the alien world of Pandora, torn between human
+                    orders and protecting the indigenous Na’vi people.
+                  </p>
+                  <div>
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../html/book.html">Book</a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#detailsModal"
+                        >
+                          Details
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="https://youtu.be/Aw7Eln_xuWc?si=7hgvKI4VWftqvdwk&t=6"
+                          >trailer</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- the footer ********************************************************************************************************* -->
+    <footer>
+      <div
+        class="container-fluid text-center text-light bg-black align-items-center"
+      >
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="footer1-links">
+              <a href="#">About Us</a>
+              <a href="#">Privacy Center</a>
+              <a href="#">Offers</a>
+              <a href="#">Careers</a>
+              <a href="#">Explore Our Site</a>
+              <a href="#">Contuct Us</a>
+              <a href="#">Help & Support</a>
+              <a href="#">cinemas</a>
+            </div>
+          </div>
+          <div class="col footer-2">
+            <p class="fw-lighter">Recieve exclusive offers and news</p>
+
+            <input type="email" placeholder="E-mail..." />
+
+            <button>sign up now</button>
+            <br /><br />
+
+            <select
+              class="form-select form-select-sm"
+              aria-label="Small select example"
+            >
+              <option selected>select country</option>
+              <option value="1">Irbid</option>
+              <option value="2">Amman</option>
+              <option value="3">Aqaba</option>
+            </select>
+          </div>
+          <div class="col">
+            <img src="../Public/logo2.PNG" alt="" class="footer-img" />
+          </div>
+        </div>
+        <div
+          class="row align-items-center border-top border-warning-subtle p-4"
+        >
+          <div class="col">
+            <p>©2026 STAR cinemas. All rights reserved</p>
+            <br />
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            />
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- modal for details btn ************************************************************************************************* -->
+    <div
+      class="modal fade"
+      id="detailsModal"
+      tabindex="-1"
+      aria-hidden="true"
+      style="
+        font-family:
+          &quot;Franklin Gothic Medium&quot;, &quot;Arial Narrow&quot;, Arial,
+          sans-serif;
+      "
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger">Divergent</h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p><strong>Genre:</strong> Action / Sci-Fi</p>
+
+            <p><strong>Duration:</strong> 2h 19m</p>
+
+            <p><strong> Ticket Price :</strong> 4 JD</p>
+
+
+            <p><strong>Release Date:</strong> July 20, 2026</p>
+
+            <p><strong>Cinema:</strong> Star Cinema - Hall 2</p>
+
+            <p><strong>Show Times:</strong></p>
+
+            <ul>
+              <li>12:00 PM</li>
+              <li>3:30 PM</li>
+              <li>7:00 PM</li>
+              <li>10:00 PM</li>
+            </ul>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../JS/script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+</html>

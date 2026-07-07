@@ -12,7 +12,7 @@
     />
     <title>Star Cinema</title>
   </head>
-  <body >
+  <body>
     <header>
       <nav
         class="navbar navbar-expand-lg fixed-top shadow-lg"
@@ -71,70 +71,106 @@
       </nav>
     </header>
 
-    <main>
-      <!-- hero section ***************************************************************************************************************************** -->
-      <section
-        class="hero-section d-flex align-items-center text-center text-white"
-      >
-        <div class="hero-welcome glow">
-          <h3>⭐ Star Cinema</h3>
-          <p>Where Every Movie Becomes an Experience. 🎬</p>
-        </div>
-      </section>
+    <main class="book-main">
 
-      <!-- section 2    now showing ******************************************************************************************************************** -->
-      <section class=" container-fluid">
+    <section id="card" class="py-4 mt-4">
+      <div class="container p-4  text-center mt-4"   
+           style="
+          font-family:
+            &quot;Gill Sans&quot;, &quot;Gill Sans MT&quot;, Calibri,
+            &quot;Trebuchet MS&quot;, sans-serif;
+        ">
+
+       <h1 class="text-danger">Book Your Ticket</h1>
         
-       <h1 class="text-danger fs-4">NOW <span class="text-black fs-1">SHOWING</span></h1>
+        <h4>Reserve your seat and enjoy the movie!</h4>
+
+        <div class="card p-4 shadow hero-section ">
+          <div class="row gap-3 justify-content-md-center">
+<!-- 1 *********************-->
+            <div class="col-8 ">
+              <input type="text" class="form-control" id="name" placeholder="your name..." />
+            </div>
+<!-- 2 **********************-->
+            <div class="col-8">
+              <input type="number" class="form-control" id="number" placeholder="your number..." />
+            </div>
+
+  <!-- 3 *********************-->
+           <div class="col-8 "> 
+            <select  class="form-select" name="Movie" id="movie">
+            country:
+            <option value=" selected">Choose Movie ..</option>
+            <option value="Divergent">Divergent</option>
+            <option value="TheBatman">The Batman</option>
+            <option value="Cinderella">Cinderella</option>
+            <option value="Avatar">Avatar</option>
+            <option value="Mission">Mission: Impossible – The Final Reckoning</option>
+          </select>
+            </div>
+<!-- 4 ************************-->
+             <div class="col-8">
+              <input  type="date" class="form-control" id="date" placeholder="date" />
+            </div>
+<!-- 5 ***********************-->
+            <div class="col-8">
+              <input  type="time" class="form-control" id="time" placeholder="time" />
+            </div>
+<!-- 6********************* -->
+       <!-- <div class="col-8 border rounded-2 p-1 "> 
+       <div class=" d-flex justify-content-evenly">
+          <label  for="seat" class="text-light"> Seat Type :</label>
+          <label  for="VIP" class="text-light">VIP </label>
+          <input  type="radio" name="seat" id="VIP" />
+          
+          <label for="female" class="text-light">Regular</label>
+          <input type="radio" name="seat" id="Regular" />
+          </div>
+        </div> -->
+
+            <div class="col-8">
+              <button class="btn btn-success w-100" onclick="BookNow()">Book Ticket</button>
+            </div>
+
+          </div>
 
 
-       <div 
-       class="container-fluid shadow-lg  align-items-center text-center p-4 rounded-3">
-       <div class="row">
-        <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card t-scale">
-                <img src="../Public/avatar.webp" class="card-img-top home-img" alt="Movie">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Avatar</h5>
-                    <a href="../html/book.html" class="btn btn-danger">Buy Ticket</a>
-                </div>
-            </div>
         </div>
-                <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card  t-scale">
-                <img src="../Public/Superman.webp" class="card-img-top home-img" alt="Movie">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Superman</h5>
-                    <a href="../html/book.html" class="btn btn-danger">Buy Ticket</a>
-                </div>
-            </div>
-        </div>
-                <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card t-scale">
-                <img src="../Public/JurassicWorld.webp" class="card-img-top home-img" alt="Movie">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Jurassic</h5>
-                    <a href="../html/book.html" class="btn btn-danger">Buy Ticket</a>
-                </div>
-            </div>
-        </div>
-                <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card t-scale">
-                <img src="../Public/7dogs.webp" class="card-img-top home-img" alt="Movie">
-                <div class="card-body text-center">
-                    <h5 class="card-title">7 Dogs</h5>
-                    <a href="../html/book.html" class="btn btn-danger">Buy Ticket</a>
-                </div>
-            </div>
-        </div>
-       </div>
-    </div>
-      </section>
+
+<br><br><br><br><br><br>
+        <h2 class="text-center mt-5">Your Bookings</h2>
+
+
+          <div class="table-responsive mt-4">
+            <table class="table table-border table-striped table-hover text-center ">
+              <thead class="table-warning">
+                <tr>
+                  <th>*</th>
+                  <th>name</th>
+                  <th>number</th>
+                  <th>Movie</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                   <th>action</th>
+                </tr>
+              </thead>
+              <tbody id="tablebody"></tbody>
+            </table>
+          </div>
+          <br>
+          <p class="text-center text-muted mb-4">
+    View, edit, or cancel your movie reservations.
+</p>
+
+      </div>
+    </section>
+
     </main>
-<br>
 
-    <footer>
+    <br />
+    <footer >
       <div
+      
         class="container-fluid text-center text-light bg-black align-items-center"
       >
         <div class="row align-items-center">
@@ -151,6 +187,8 @@
             </div>
           </div>
           <div class="col footer-2">
+
+        
 
             <p class="fw-lighter">Recieve exclusive offers and news</p>
 
