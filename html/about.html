@@ -71,67 +71,136 @@
       </nav>
     </header>
 
-    <main>
-      <!-- hero section ***************************************************************************************************************************** -->
-      <section
-        class="hero-section d-flex align-items-center text-center text-white"
-      >
-        <div class="hero-welcome glow">
-          <h3>⭐ Star Cinema</h3>
-          <p>Where Every Movie Becomes an Experience. 🎬</p>
-        </div>
-      </section>
+   <main  > 
+    <!-- class="container my-5 pt-5" -->
 
-      <!-- section 2    now showing ******************************************************************************************************************** -->
-      <section class=" container-fluid">
-        
-       <h1 class="text-danger fs-4">NOW <span class="text-black fs-1">SHOWING</span></h1>
+     <section class="hero-about position-relative">
 
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="../Public/vid.mp4" type="video/mp4">
+    </video>
 
-       <div 
-       class="container-fluid shadow-lg  align-items-center text-center p-4 rounded-3">
-       <div class="row">
-        <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card t-scale">
-                <img src="../Public/avatar.webp" class="card-img-top home-img" alt="Movie">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Avatar</h5>
-                    <a href="../html/book.html" class="btn btn-danger">Buy Ticket</a>
-                </div>
-            </div>
+    <div class="hero-overlay d-flex justify-content-center align-items-center">
+        <div class="hero-welcome-about glow text-center text-white">
+            <h3> About Star Cinema</h3>
+
+            <p>
+                Welcome to Star Cinema, where every movie becomes an unforgettable experience.
+                <br>
+                Enjoy the latest films, luxury halls, comfortable seats, and premium entertainment. 
+            </p>
         </div>
-                <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card  t-scale">
-                <img src="../Public/Superman.webp" class="card-img-top home-img" alt="Movie">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Superman</h5>
-                    <a href="../html/book.html" class="btn btn-danger">Buy Ticket</a>
-                </div>
-            </div>
-        </div>
-                <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card t-scale">
-                <img src="../Public/JurassicWorld.webp" class="card-img-top home-img" alt="Movie">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Jurassic</h5>
-                    <a href="../html/book.html" class="btn btn-danger">Buy Ticket</a>
-                </div>
-            </div>
-        </div>
-                <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card t-scale">
-                <img src="../Public/7dogs.webp" class="card-img-top home-img" alt="Movie">
-                <div class="card-body text-center">
-                    <h5 class="card-title">7 Dogs</h5>
-                    <a href="../html/book.html" class="btn btn-danger">Buy Ticket</a>
-                </div>
-            </div>
-        </div>
-       </div>
     </div>
-      </section>
-    </main>
-<br>
+
+</section>
+
+
+
+
+
+       <!-- <section
+        class=" hero-about  d-flex align-items-center text-center text-white"
+      >
+        <div class=" hero-welcome-about glow text-center">
+          <h3>⭐About Star Cinema</h3>
+          <p>   Welcome to Star Cinema, where every movie becomes an unforgettable experience.
+            <br>
+            Enjoy the latest films, luxury halls, comfortable seats, and premium entertainment. 🎬</p>
+        </div>
+      </section> -->
+
+
+
+
+    <!-- <div class="text-center mb-5">
+        <h1 class="display-4 text-warning">About Star Cinema</h1>
+        <p class="lead">
+            Welcome to Star Cinema, where every movie becomes an unforgettable experience.
+            Enjoy the latest films, luxury halls, comfortable seats, and premium entertainment.
+        </p>
+    </div> -->
+
+    <!-- Dark / Light Button -->
+     <section class="container m-5">
+    <div class="text-center">
+        <button class="btn btn-warning" onclick="toggleTheme()">
+            🌙 Dark / ☀️ Light
+        </button>
+    </div>
+</section>
+    <!-- About -->
+    <div class="container-fluid row align-items-center mb-5">
+
+        <div class="col-lg-6 ">
+            <img src="../Public/star.jpeg"
+                 class="img-fluid rounded shadow"
+                 >
+        </div>
+
+        <div class="col-lg-6 ">
+
+            <h2 class="text-warning">Who We Are</h2>
+
+            <p>
+                Star Cinema offers an unforgettable movie experience with
+                modern theaters, premium sound systems, and comfortable seating.
+                Whether you're watching the newest blockbuster or enjoying a family movie,
+                we make every visit special.
+            </p>
+
+            <ul>
+                <li>✔ Luxury Cinema Halls</li>
+                <li>✔ IMAX Experience</li>
+                <li>✔ Dolby Atmos Sound</li>
+                <li>✔ Comfortable VIP Seats</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Gallery -->
+
+    <h2 class="text-center text-warning mb-4">
+        Explore Our Cinema
+    </h2>
+
+    <div class="row g-5 container-fluid">
+
+        <div class="col-md-4" >
+            <img src="../Public/hall1.avif"
+                 class="img-fluid rounded shadow t-scale2">
+        </div>
+
+        <div class="col-md-4">
+            <img src="../Public/h.jpg"
+                 class="img-fluid rounded shadow t-scale2">
+        </div>
+
+        <div class="col-md-4">
+            <img src="../Public/h3.avif"
+                 class="img-fluid rounded shadow t-scale2">
+        </div>
+
+        <div class="col-md-4">
+            <img src="../Public/d.jpg"
+                 class="img-fluid rounded shadow t-scale2">
+        </div>
+
+        <div class="col-md-4">
+            <img src="../Public/popcorn.jpg"
+                 class="img-fluid rounded shadow t-scale2">
+        </div>
+
+        <div class="col-md-4">
+            <img src="../Public/drinks2.jpg"
+                 class="img-fluid rounded shadow t-scale2">
+        </div>
+
+    </div>
+<br><br>
+</main>
+
 
     <footer>
       <div
